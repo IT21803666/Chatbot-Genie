@@ -85,7 +85,7 @@ app.get('/', (req, res) => {
   });
 
   app.get('/loader.gif', (req, res) => {
-    res.sendFile(__dirname + '/loader.gif');
+    res.sendFile(__dirname + '/loader.gif');  //inserted a loader gif when reloading chatbot
   });
 
   app.post('/chat', async (req, res) => {
